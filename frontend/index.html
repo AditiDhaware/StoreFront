@@ -3,26 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Storefront App</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Storefront App - Products</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <h1>Storefront App</h1>
-        <input type="text" id="search" placeholder="Search Products">
-        <select id="categoryFilter"></select>
-        <select id="sortPrice">
-            <option value="">Sort By Price</option>
-            <option value="low-high">Low to High</option>
-            <option value="high-low">High to Low</option>
-        </select>
+        <div class="cart-icon">
+            <a href="cart.html">Cart 🛒 <span id="cart-count">0</span></a>
+        </div>
     </header>
 
-    <main>
-        <section id="products"></section>
-        <aside id="cart"></aside>
-    </main>
+    <section class="filters">
+        <input type="text" id="searchInput" placeholder="Search Products...">
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+        </select>
+        <select id="sortPrice">
+            <option value="default">Sort By Price</option>
+            <option value="asc">Low to High</option>
+            <option value="desc">High to Low</option>
+        </select>
+    </section>
 
-    <script src="script.js"></script>
+    <section id="product-list" class="product-list"></section>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
