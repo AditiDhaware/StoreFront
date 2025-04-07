@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storefront App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Storefront App</h1>
+        <input type="text" id="search" placeholder="Search Products">
+        <select id="categoryFilter"></select>
+        <select id="sortPrice">
+            <option value="">Sort By Price</option>
+            <option value="low-high">Low to High</option>
+            <option value="high-low">High to Low</option>
+        </select>
+    </header>
+
+    <main>
+        <section id="products"></section>
+        <aside id="cart"></aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
